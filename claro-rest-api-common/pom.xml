@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pe.com.claro</groupId>
+	<artifactId>claro-rest-api-common</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<name>claro-rest-api-common</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<swagger.jaxrs>1.3.13</swagger.jaxrs>
+		<com.fasterxml.jackson.core>2.4.2</com.fasterxml.jackson.core>
+		<org.hibernate.javax.persistence>1.0.0.Final</org.hibernate.javax.persistence>
+		<org.hibernate>5.1.0.Final</org.hibernate>
+		<claro.common>1.0.0</claro.common>
+		<java-version>1.8</java-version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.wordnik</groupId>
+			<artifactId>swagger-jaxrs_2.10</artifactId>
+			<version>${swagger.jaxrs}</version>
+			<scope>compile</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>jackson-databind</artifactId>
+					<groupId>com.fasterxml.jackson.core</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+		<!--  dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>${org.hibernate.javax.persistence}</version>
+		</dependency-->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${org.hibernate}</version>
+		</dependency>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-common</artifactId>
+			<version>${claro.common}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<target>${java-version}</target>
+					<source>${java-version}</source>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

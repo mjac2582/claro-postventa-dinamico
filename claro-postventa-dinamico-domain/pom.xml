@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>pe.com.claro</groupId>
+		<artifactId>claro-postventa-dinamico</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>claro-postventa-dinamico-domain</artifactId>
+	<name>claro-postventa-dinamico-domain</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<agendamiento>1.0.0</agendamiento>
+		<claro.postventa.agendamiento.canonical>1.0.0</claro.postventa.agendamiento.canonical>
+		<claro.postventa.agendamiento.integration>1.0.0</claro.postventa.agendamiento.integration>
+		<claro.rest.api.common>2.0.0</claro.rest.api.common>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-postventa-dinamico-canonical</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-postventa-dinamico-integration</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-postventa-dinamico-model</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+	</dependencies>
+</project>

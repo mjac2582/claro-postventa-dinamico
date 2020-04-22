@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>pe.com.claro</groupId>
+		<artifactId>claro-postventa-dinamico</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>claro-postventa-dinamico-integration</artifactId>
+	<name>claro-postventa-dinamico-integration</name>
+
+	<properties>
+		<claro.rest.api.client>1.0.0</claro.rest.api.client>
+		<claro.postventa.agendamiento.canonical>1.0.0</claro.postventa.agendamiento.canonical>
+		<java-version>1.8</java-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-rest-api-client</artifactId>
+			<version>${claro.rest.api.client}</version>
+		</dependency>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-postventa-dinamico-canonical</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-postventa-dinamico-model</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.3.6.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.6.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>pe.com.claro.eai</groupId>
+			<artifactId>ConsultaClavesWS-Client</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+	</dependencies>
+</project>

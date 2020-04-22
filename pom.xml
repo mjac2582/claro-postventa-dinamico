@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pe.com.claro</groupId>
+	<artifactId>claro-postventa-dinamico</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>claro-common</module>
+		<module>claro-rest-api-client</module>
+		<module>claro-rest-api-common</module>
+		<module>claro-postventa-dinamico-canonical</module>
+		<module>claro-postventa-dinamico-domain</module>
+		<module>claro-postventa-dinamico-integration</module>
+		<module>claro-postventa-dinamico-resource</module>
+
+		<module>claro-postventa-dinamico-model</module>
+	</modules>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version>1.8</java-version>
+		<claro.common>1.0.0</claro.common>
+		<javaee.api>7.0</javaee.api>
+		<javax.ejb>3.2</javax.ejb>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<target>${java-version}</target>
+					<source>${java-version}</source>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${javaee.api}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
